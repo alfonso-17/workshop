@@ -4,17 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>worshop-GIT</title>
+    <title>workshop-GIT</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
-    <h1>worshop-GIT</h1>
-    <h2>control de versiones </h2>
-    <p>Un sistema de control de versiones se encarga del registro de los cambios realizados a lo largo del tiempo en uno
-        o un conjunto de archivos (versiones), de forma tal que estos puedan ser recuperados con precisión de acuerdo a
-        las necesidades de los usuarios. A este tipo de procesos se le puede denominar versionamiento y si bien este
-        tipo de actividades son comunes en archivos o código fuente en la industria del desarrollo de software, este es
-        un proceso aplicable a cualquier tipo de archivo. </p>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/LP/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#actividad" onclick="seleccionar(this)">ACTIVIDAD</a></li>
+                            <li><a href="#solucion" onclick="seleccionar(this)">SOLUCION</a></li>
+
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Jose Alfonso Avila</span>,2877292</h2>
+                <a href="#actividad">Ir a la actividad</a>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION A C T I V I D A D -->
+    <section id="actividad">
+        <h4>ACTIVIDAD</h4>
+        <h3>1. ¿Qué es un control de versiones? <br><br>
+            2. ¿Qué es GIT?<br><br>
+            3. ¿Qué es un repositorio?, repositorio locales y remotos.<br><br>
+            4. ¿Qué es GITHUB?<br><br>
+            5. ¿Qué es una rama en GIT y para qué sirve?<br><br>
+            6. ¿Cuáles son los estados en GIT?<br><br>
+            7. ¿Qué es la terminal, consola o línea de comandos y para qué sirve?<br><br>
+            8. Escribir el funcionamiento de cada uno de los siguientes comandos:<br><br>
+            9. Realizar un listado con el nombre y el funcionamiento de los comandos vistos en la sesión<br><br>
+            de clase de GIT.<br><br></h3>
+
+    </section>
+    <!-- SECCION S O L U C I O N -->
+    <section id="solucion">
+        <h4>SOLUCION</h4>
+        <p>1. ¿Qué es un control de versiones?</p> <br>
+        <img src="img/act 1.png" alt=""> <br>
+        <span>Sistema que registra cambios en archivos a lo largo del tiempo, permitiendo recuperar versiones
+            específicas y facilitando la colaboración</span>
+        <p> 2. ¿Qué es GIT?</p><br>
+        <img src="img/act 2.svg" alt=""> <br>
+        <span>Sistema de control de versiones distribuido que permite a múltiples desarrolladores trabajar en un
+            proyecto simultáneamente sin interferir en el trabajo de los demás.</span>
+        <p> 3. ¿Qué es un repositorio?, repositorio locales y remotos.</p><br>
+        <img src="img/act 3.png" alt=""> <br>
+        <span>Local: Repositorio en tu máquina local. <br>
+            Remoto: Repositorio en un servidor remoto (ej. GitHub) para compartir y colaborar.</span>
+        <p> 4. ¿Qué es GITHUB?</p><br>
+        <img src="img/act 4.jpeg" alt=""> <br>
+        <span>Plataforma de desarrollo colaborativo que aloja proyectos utilizando Git y proporciona herramientas para
+            colaboración y gestión de versiones.</span>
+        <p> 5. ¿Qué es una rama en GIT y para qué sirve?</p><br>
+        <img src="img/act 5.png" alt=""> <br>
+        <span>Línea de desarrollo independiente que permite trabajar en características o correcciones de errores sin
+            afectar la versión principal del proyecto.</span>
+        <p> 6. ¿Cuáles son los estados en GIT?</p><br>
+        <img src="img/act 6.png" alt=""> <br>
+        <span>Modificado: Archivo cambiado pero no preparado.
+            Preparado: Cambios listos para ser confirmados.
+            Confirmado: Cambios guardados en el historial del repositorio.</span>
+        <p> 7. ¿Qué es la terminal, consola o línea de comandos y para qué sirve?</p><br>
+        <img src="img/act 7.jpeg" alt=""> <br>
+        <span>Interfaz basada en texto para interactuar con el sistema operativo y ejecutar comandos.</span>
+        <p> 8. Escribir el funcionamiento de cada uno de los siguientes comandos:</p><br>
+        <img src="img/act 8.webp" alt=""> <br>
+        <span>git init: Inicializa un nuevo repositorio.
+            git clone <url>: Clona un repositorio.
+                git status: Muestra el estado del repositorio.
+                git add <archivo>: Añade archivos al área de preparación.
+                    git commit -m "mensaje": Confirma los cambios.
+                    git push <remoto>
+                        <rama>: Envía cambios al repositorio remoto.
+                            git pull <remoto>
+                                <rama>: Recupera cambios del repositorio remoto.
+                                    git branch <nombre>: Crea una nueva rama.
+                                        git checkout <rama>: Cambia de rama.
+                                            git merge <rama>: Fusiona ramas.</span>
+        <p> 9. Realizar un listado con el nombre y el funcionamiento de los comandos vistos en la sesión de clase de
+            GIT. </p>
+
+        <br>
+        <span>git init: Inicializa un repositorio. <br>
+
+            git status: Muestra el estado del repositorio. <br>
+            git add: Añade archivos al área de preparación. <br>
+            git commit: Confirma los cambios. <br>
+            git push: Envía cambios al remoto. <br>
+            git config --global user.email ( tu email) colocas el trabajo con el correo a tu nombre <br>
+            git config user.name: coloca el proyecto a tu nombre<br>
+            git clone: clona un archivo <br>
+            git branch: Gestiona ramas. <br>
+            git add: toma una instantanea del archivo para prepararar la version. <br>
+            git status: Enumera todos los archivos nuevos o modificados que se deben confirmar <br>
+            git log: Enumera el historial de la versión para la rama actual. <br>
+            git merge: Fusiona ramas.
+            git pull: descarga el historial del marcador e incorpora cambios
+            <br></span>
+        <br><br>
+        </p>
+    </section>
 </body>
 
 </html>
